@@ -1,0 +1,177 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+    padding: 0px;
+    height: 700px;
+}
+
+
+.container {
+    width: 375px;
+    background-color: hsl(215deg 24% 14%);
+    border-radius: 25px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -2px 2px 12px 0px #000000;
+}
+
+/* .container .box-one {
+    display: none;
+} */
+
+.container .box-one .star {
+    margin: 23px 30px;
+    margin-top: 30px;
+    padding: 12px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    width: 20px;
+}
+
+.container .box-one .star svg {
+    transform: translate(10%, 10%);
+}
+
+.container .box-one .text {
+    margin: 15px 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+.container .box-one .text h2 {
+    font-weight: 700;
+    margin-bottom: -3px;
+}
+
+.container .box-one .text p {
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 1.6;
+    width: 110%;
+}
+
+.container .box-one .nums {
+    display: flex;
+    justify-content: center;
+}
+
+.container .box-one .nums span {
+    margin: 12px;
+    padding: 12px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    width: 20px;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .box-one .nums span:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.container .box-one .submit button {
+    width: 310px;
+    padding: 13px 0;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    border-radius: 22px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+    margin: 25px auto;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .box-one .submit button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+/* on click event change span color with this class to orange */
+.selected {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: white !important;
+}
+
+/* on click event changes box one display to none */
+.none {
+    display: none !important;
+}
+
+.container .box-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .box-two .svg {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.container .box-two .count {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 22px;
+    font-size: 14px;
+    padding: 5px 18px;
+}
+
+.container .box-two .count p {
+    margin: 0;
+}
+
+.container .box-two .thanks {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .box-two .thanks h2 {
+    font-weight: 700;
+}
+
+.container .box-two .thanks p {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    margin: 5px;
+}
+
+.attribution {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 350px;
+    }
+
+    .container .box-one .text p {
+        width: 102%;
+    }
+
+    .container .box-one .nums span {
+        margin: 12px 9px;
+    }
+
+    .container .box-one .submit button {
+        width: 290px;
+        padding: 15px 0;
+        margin-top: 20px;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+}
